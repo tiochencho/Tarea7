@@ -28,4 +28,3 @@ function factorial(n) {
 const numero = 5; // Cambia este número según tus necesidades
 const resultado = factorial(numero);
 console.log(`El factorial de ${numero} es ${resultado}`);
-
