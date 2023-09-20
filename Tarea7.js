@@ -28,3 +28,14 @@ function factorial(n) {
 const numero = 5; // Cambia este número según tus necesidades
 const resultado = factorial(numero);
 console.log(`El factorial de ${numero} es ${resultado}`);
+
+//Serie fibonacci
+var n1=0, n2=1, next, i;
+var num=5;
+for (i=1; i<= num; i++){
+  console.log(n1);
+  next=n1+n2;
+  n1=n2;
+  n2=next;
+}
+
