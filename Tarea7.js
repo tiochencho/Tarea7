@@ -12,30 +12,20 @@ function gregoryLeibniz(iterations) {
   return pi * 4; // Multiplicamos por 4 para obtener una aproximación de π
 }
 
-const iterations = 1000000; // Puedes ajustar el número de iteraciones según la precisión que desees
+const iterations = 1000000;                 
 const approximatePi = gregoryLeibniz(iterations);
 console.log(`Aproximación de π después de ${iterations} iteraciones: ${approximatePi}`);
 
-//Serie Factorial 
-function factorial(n) {
-  if (n === 0) {
-    return 1; // El factorial de 0 es 1
-  } else {
-    return n * factorial(n - 1);
-  }
+//Serie Factorial con Recursividad 
+const factorial = n=>{
+  if (n <= 1)return 1
+  return n * factorial(n-1);
 }
+console.log(`El factorial de 3 es:${factorial(3)}`);
 
-const numero = 5; // Cambia este número según tus necesidades
-const resultado = factorial(numero);
-console.log(`El factorial de ${numero} es ${resultado}`);
-
-//Serie fibonacci
-var n1=0, n2=1, next, i;
-var num=5;
-for (i=1; i<= num; i++){
-  console.log(n1);
-  next=n1+n2;
-  n1=n2;
-  n2=next;
+//Serie Fibonacci con Recursividad
+const fibonacci = n =>{
+  if (n<2)return n
+  return fibonacci(n-2)+fibonacci(n-1);
 }
-
+console.log(`El fibonacci de 4 es:${fibonacci(4)}`);
