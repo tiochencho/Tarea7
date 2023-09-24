@@ -21,11 +21,11 @@ const factorial = n=>{
   if (n <= 1)return 1
   return n * factorial(n-1);
 }
-console.log(`El factorial de 3 es:${factorial(3)}`);
+console.log(`El factorial de 5 es:${factorial(5)}`);
 
 //Serie Fibonacci con Recursividad
 const fibonacci = n =>{
   if (n<2)return n
   return fibonacci(n-2)+fibonacci(n-1);
 }
-console.log(`El fibonacci de 4 es:${fibonacci(4)}`);
+console.log(`El fibonacci de 5 es:${fibonacci(5)}`);
