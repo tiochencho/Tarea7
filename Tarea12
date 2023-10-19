@@ -1,0 +1,9 @@
+function secuenciaDescendente(numero) {
+  if (numero < 0) {
+    return;
+  }
+  console.log(numero);
+ secuenciaDescendente(numero - 1);
+
+}
+secuenciaDescendente(9);
