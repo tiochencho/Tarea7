@@ -1,0 +1,27 @@
+class Dominant {
+  constructor() {}
+  Arr(a) {
+      console.log(a.join(", ") + ".");
+  }
+  
+  dominante(a) {
+      let b = new Array(a.length);
+      let k = 0;
+      let dominantE = new Array(k);
+
+      for (let i = 0; i < a.length; i++) {
+          if (i === a.length - 1 || a[i] > a[i + 1]) {
+              b[k] = a[i];
+              k++;
+          }
+      }
+
+      for (let i = 0; i < k; i++) {
+          dominantE [i] = b[i];
+      }
+      return dominantE ;
+  }
+}
+const dom = new Dominant();
+const arreglo = [1, 21, 4, 7, 5];
+console.log(dom.dominante(arreglo));
