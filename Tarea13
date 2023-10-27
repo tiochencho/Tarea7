@@ -1,9 +1,4 @@
 class Dominant {
-  constructor() {}
-  Arr(a) {
-      console.log(a.join(", ") + ".");
-  }
-  
   dominante(a) {
       let b = new Array(a.length);
       let k = 0;
